@@ -58,8 +58,8 @@ Puedes encontrar el script en: `sql/codigo_crudbd.sql`
 
 ## 🙋 Autor
 
-Johan Esneider Lucumí Palacios & Esteban Marta Rojas
-_Tecnólogo en Desarrollo de Sistemas de Información y Software_  
+Johan Esneider Lucumí Palacios & Esteban Marta Rojas       
+ _Tecnólogo en Desarrollo de Sistemas de Información y Software_  
 📧 Contacto: johanesneiderlucumip@gmail.com
 
 ---
