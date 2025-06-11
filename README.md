@@ -1,0 +1,2 @@
+# crud-bd
+Este proyecto corresponde al trabajo final del curso Laboratorio de Base de Datos de la Universidad Santiago de Cali y consiste en el desarrollo de una página web con funcionalidad CRUD (Crear, Leer, Actualizar y Eliminar) utilizando PHP y MySQL, permitiendo aplicar los conocimientos adquiridos sobre modelado de datos, consultas SQL e integración con entornos web.

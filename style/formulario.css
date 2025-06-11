@@ -1,0 +1,130 @@
+
+.header-nav {
+    justify-content: space-between; /* Mantenemos para empujar izquierda y derecha */
+}
+
+/* Agrupa todos los botones para que estén a la derecha */
+.main-nav-buttons {
+    margin-left: auto; /* Empuja este grupo de botones a la derecha */
+    flex-grow: 0; /* Aseguramos que no crezca para centrar */
+    justify-content: flex-start; /* Opcional: si quieres que sus botones internos se peguen a la izquierda de su propio contenedor */
+}
+
+.right-section {
+    /* Si tienes más elementos en right-section y quieres espacio entre main-nav-buttons y ellos */
+    margin-left: 20px; /* Un poco de espacio entre el último botón de main-nav-buttons y right-section */
+}
+
+/* Opcional: Si quieres que todos los button-group dentro de main-nav-buttons y right-section
+   se agrupen con un gap común si no lo tienen ya */
+.main-nav-buttons, .right-section {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Consistencia en el gap entre todos los button-group */
+}
+
+
+
+
+
+.form-content {
+    /* Ajusta el padding superior si el header-nav es más alto o más bajo */
+    padding-top: 120px; /* Un poco más de espacio si el nav es grande */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el título y el contenedor del formulario */
+}
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px; /* Ancho máximo para el formulario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra similar a la de la tabla */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho/alto */
+    margin-bottom: 40px; /* Espacio inferior */
+}
+
+.styled-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre cada grupo de formulario */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Espacio entre label y input/textarea */
+}
+
+.form-group label {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333; /* Color de texto para las etiquetas */
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"], /* Por si necesitas campos numéricos */
+.form-group input[type="email"], /* Por si necesitas campos de email */
+.form-group textarea,
+.form-group select {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    box-sizing: border-box; /* Importante para que el padding no aumente el ancho */
+    background-color: #f8f8f8; /* Un fondo ligeramente diferente para los campos */
+    color: #333;
+}
+
+.form-group textarea {
+    resize: vertical; /* Permite redimensionar solo verticalmente */
+    min-height: 80px; /* Altura mínima para el área de texto */
+}
+
+.form-group input[type="text"]:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none; /* Elimina el contorno azul por defecto */
+    border-color: #5FA9DD; /* Borde azul al enfocar, como el hover de tus botones */
+    box-shadow: 0 0 5px rgba(95, 169, 221, 0.5);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end; /* Alinea los botones a la derecha */
+    gap: 15px; /* Espacio entre los botones de acción */
+    margin-top: 20px; /* Espacio encima de los botones */
+}
+
+.submit-button {
+    background-color: #4CAF50; /* Verde para guardar/enviar */
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #45a049; /* Verde oscuro al hacer hover */
+}
+
+.cancel-button {
+    background-color: #f44336; /* Rojo para cancelar */
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-button:hover {
+    background-color: #da190b; /* Rojo oscuro al hacer hover */
+}
